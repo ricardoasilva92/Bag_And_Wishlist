@@ -1,16 +1,14 @@
 import React, { useContext } from "react";
 import "./App.css";
-import Layout from "./Layout";
-import Basket from "./Assets/initialState";
+import Layout from "./components/Layout/Layout";
 import { BasketProvider } from "./BasketContext";
 
 function App() {
   return (
-    <BasketProvider value={123}>
+    <BasketProvider>
       <div className="App">
-        <header className="App-header">
-          <Layout name={Basket} />
-        </header>
+        <header className="App-header"/>
+          <Layout />
       </div>
     </BasketProvider>
   );

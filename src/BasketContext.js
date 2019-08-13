@@ -38,7 +38,7 @@ export const BasketProvider = props => {
     }
   });
   return (
-    <BasketContext.Provider value={123}>
+    <BasketContext.Provider value={basket}>
       {props.children}
     </BasketContext.Provider>
   );

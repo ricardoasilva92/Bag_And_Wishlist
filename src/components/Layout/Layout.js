@@ -3,7 +3,7 @@ import { BasketContext } from "../../BasketContext";
 import Styles from "./Layout.module.css";
 import Bag from "../Bag/Bag";
 
-const Layout = props => {
+const Layout = () => {
   
   return (
     <div className={Styles.layout}>

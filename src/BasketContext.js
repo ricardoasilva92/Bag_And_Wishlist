@@ -6,14 +6,14 @@ export const BasketProvider = props => {
   const [basket, setBasket] = useState({
     Bag: {
       product1: {
-        img: "awdawdwdaw",
+        image: "https://cdn-images.farfetch-contents.com/13/57/52/72/13575272_18720052_1000.jpg",
         brand: "Gucci",
         name: "black sweater",
         quantity: "1",
         price: "123"
       },
       product2: {
-        img: "awdawdwdaw",
+        image: "awdawdwdaw",
         brand: "Gucci",
         name: "black sweater",
         quantity: "1",
@@ -22,14 +22,14 @@ export const BasketProvider = props => {
     },
     Wishlist: {
       product2: {
-        img: "awdawdwdaw",
+        image: "awdawdwdaw",
         brand: "Gucci",
         name: "black sweater",
         quantity: "1",
         price: "123"
       },
       product3: {
-        img: "awdawdwdaw",
+        image: "awdawdwdaw",
         brand: "Gucci",
         name: "black sweater",
         quantity: "1",

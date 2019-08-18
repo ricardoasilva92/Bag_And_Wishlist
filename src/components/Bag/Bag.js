@@ -9,9 +9,9 @@ const Bag = () => {
     return (
         <div className={Styles.bag}>
             <h1>Bag</h1>
-            <BagProductCard
-                product={context.Bag[Object.keys(context.Bag)[0]]}
-            />
+            {context.Bag.products.map(prod => (
+                <BagProductCard product={prod} />
+            ))}
         </div>
     );
 };

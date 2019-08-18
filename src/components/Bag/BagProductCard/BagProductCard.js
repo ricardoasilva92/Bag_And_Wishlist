@@ -10,7 +10,7 @@ const BagProductCard = props => (
                 alt="Gucci X Mickey Mouse tote bag"
             />
         </div>
-        <div className={Styles.productInformation}>
+        <div className={Styles.productInfo}>
             <ul>
                 <li>Brand: {props.product.brand}</li>
                 <li>Name: {props.product.name}</li>

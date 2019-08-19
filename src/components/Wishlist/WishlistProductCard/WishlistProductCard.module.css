@@ -1,0 +1,11 @@
+.wishlistProductCard {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    align-items: center;
+    margin: 0 4px;
+}
+
+ul {
+    list-style-type: none;
+}

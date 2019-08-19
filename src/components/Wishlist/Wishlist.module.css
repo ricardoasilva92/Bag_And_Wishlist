@@ -1,5 +1,12 @@
 .wishlist {
+    border: solid 1px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 12px;
+}
+
+.wishlistSlider {
+    display: flex;
+    flex-direction: row;
 }

@@ -1,21 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Styles from "./Wishlist.module.css";
 import WishlistProductCard from './WishlistProductCard/WishlistProductCard'
+import { BasketContext } from '../../BasketContext';
 
-const Wishlist = () => (
-    <section className={Styles.wishlist}>
-        <h1>Wishlist</h1>
-        <div className={Styles.wishlistSlider}>
-            <WishlistProductCard />
-            <WishlistProductCard />
-            <WishlistProductCard />
-            <WishlistProductCard />
-            <WishlistProductCard />
-            <WishlistProductCard />
-            <WishlistProductCard />
-            <WishlistProductCard />
-        </div>
-    </section>
-);
+const Wishlist = () => {
+    const context = useContext(BasketContext);
+
+    return (
+        <section className={Styles.wishlist}>
+            <h1>Wishlist</h1>
+            <div className={Styles.wishlistSlider}>
+                {context.Wishlist.products.map(prod => <WishlistProductCard productInfo={prod} />)}
+            </div>
+        </section>
+    )
+};
 
 export default Wishlist;

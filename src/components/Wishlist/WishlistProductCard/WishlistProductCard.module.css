@@ -1,11 +1,25 @@
 .wishlistProductCard {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px;
-    align-items: center;
-    margin: 0 4px;
+	display: flex;
+	flex-direction: column;
+	border: solid 1px;
+	align-items: center;
+	margin: 0 4px;
 }
 
 ul {
-    list-style-type: none;
+	list-style-type: none;
+}
+
+.productImageContainer {
+    display: flex;
+    align-items: center; /* vertical align */
+    justify-content: center; /*horizontal align */
+    height: 40%;
+	width: 100%;
+}
+
+.productImage {
+	max-width: 100%;
+    max-height: 100%;
+    display: block;
 }

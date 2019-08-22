@@ -6,7 +6,7 @@ export const BasketProvider = props => {
   const [basket, setBasket] = useState({
     Bag: {
       id: "12345678",
-      products: [ 
+      products: [
         {
           image: "https://cdn-images.farfetch-contents.com/13/57/52/72/13575272_18720052_1000.jpg",
           brand: "Gucci",
@@ -31,20 +31,38 @@ export const BasketProvider = props => {
       ]
     },
     Wishlist: {
-      product2: {
-        image: "awdawdwdaw",
-        brand: "Gucci",
-        name: "black sweater",
-        quantity: "1",
-        price: "123"
-      },
-      product3: {
-        image: "awdawdwdaw",
-        brand: "Gucci",
-        name: "black sweater",
-        quantity: "1",
-        price: "123"
-      }
+      products: [
+        {
+          image: "https://cdn-images.farfetch-contents.com/13/50/98/15/13509815_17567343_1000.jpg",
+          brand: "Gucci",
+          name: "Monaco two-piece suit",
+          price: "1,920 €"
+        },
+        {
+          image: "https://cdn-images.farfetch-contents.com/12/81/13/29/12811329_13699362_600.jpg",
+          brand: "Tag Heuer",
+          name: "Formula 1 41mm",
+          price: "850 €"
+        },
+        {
+          image: "https://cdn-images.farfetch-contents.com/13/55/69/05/13556905_16151033_600.jpg",
+          brand: "Moscot",
+          name: "Lemtosh round sunglasses",
+          price: "359 €"
+        },
+        {
+          image: "https://cdn-images.farfetch-contents.com/14/45/03/27/14450327_21194615_600.jpg",
+          brand: "Burberry",
+          name: "Union Jack and Logo Print Oversized Puffer Cape",
+          price: "1,590 €"
+        },
+        {
+          image: "https://cdn-images.farfetch-contents.com/14/03/74/10/14037410_20548546_600.jpg",
+          brand: "Gucci",
+          name: "logo tote bag",
+          price: "1,155 €"
+        }
+      ]
     }
   });
   return (

@@ -1,9 +1,13 @@
-.wishlist {
+.wishlistTitle {
+    text-align: center;
+}
+
+.wishlistSliderContainer {
     border: solid 1px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     margin-top: 12px;
+    overflow-x: auto;
 }
 
 .wishlistSlider {

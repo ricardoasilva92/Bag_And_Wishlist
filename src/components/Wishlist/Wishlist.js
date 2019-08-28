@@ -11,8 +11,8 @@ const Wishlist = () => {
             <h1 className={Styles.wishlistTitle}>Wishlist</h1>
             <div className={Styles.wishlistSliderContainer}>
                 <div className={Styles.wishlistSlider}>
-                    {basket.Wishlist.products.map(prod => (
-                        <WishlistProductCard productInfo={prod} />
+                    {basket.Wishlist.products.map((prod, index) => (
+                        <WishlistProductCard productInfo={prod} index={index} />
                     ))}
                 </div>
             </div>

@@ -4,13 +4,13 @@ import Styles from "./Bag.module.css";
 import BagProductCard from "./BagProductCard/BagProductCard";
 
 const Bag = () => {
-    const context = useContext(BasketContext);
-    console.log(context);
+    const [basket, setBasket] = useContext(BasketContext);
+    console.log(basket);
     return (
         <div className={Styles.bag}>
             <h1>Bag</h1>
-            {context.Bag.products.map(prod => (
-                <BagProductCard product={prod} />
+            {basket.Bag.products.map((prod,index) => (
+                <BagProductCard product={prod} index={index} />
             ))}
         </div>
     );

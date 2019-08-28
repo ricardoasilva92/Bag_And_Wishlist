@@ -4,14 +4,14 @@ import WishlistProductCard from "./WishlistProductCard/WishlistProductCard";
 import { BasketContext } from "../../BasketContext";
 
 const Wishlist = () => {
-    const context = useContext(BasketContext);
+    const [basket, setBasket] = useContext(BasketContext);
 
     return (
         <section className={Styles.wishlist}>
             <h1 className={Styles.wishlistTitle}>Wishlist</h1>
             <div className={Styles.wishlistSliderContainer}>
                 <div className={Styles.wishlistSlider}>
-                    {context.Wishlist.products.map(prod => (
+                    {basket.Wishlist.products.map(prod => (
                         <WishlistProductCard productInfo={prod} />
                     ))}
                 </div>

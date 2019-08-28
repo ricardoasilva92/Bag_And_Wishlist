@@ -66,7 +66,7 @@ export const BasketProvider = props => {
     }
   });
   return (
-    <BasketContext.Provider value={basket}>
+    <BasketContext.Provider value={[basket,setBasket]}>
       {props.children}
     </BasketContext.Provider>
   );

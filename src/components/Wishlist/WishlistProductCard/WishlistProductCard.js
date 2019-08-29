@@ -30,7 +30,7 @@ const WishlistProductCard = props => {
                 <p>{props.productInfo.name}</p>
                 <p>{props.productInfo.price}</p>
             </div>
-            <button onClick={handleClick}>Add to Bag</button>
+            <button className={Styles.addToBag}onClick={handleClick}>Add to Bag</button>
         </div>
     );
 };

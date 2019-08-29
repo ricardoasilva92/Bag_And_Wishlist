@@ -3,7 +3,7 @@ import Styles from "./BagProductCard.module.css";
 import { BasketContext } from "../../../BasketContext";
 
 const BagProductCard = props => {
-    const [basket, setBasket] = useContext(BasketContext);
+    const [, setBasket] = useContext(BasketContext);
 
     const handleClick = () => {
         setBasket(prevBasket => {

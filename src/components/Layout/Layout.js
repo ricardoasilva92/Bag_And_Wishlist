@@ -1,5 +1,4 @@
-import React, { useState, useContext } from "react";
-import { BasketContext } from "../../BasketContext";
+import React  from "react";
 import Styles from "./Layout.module.css";
 import Bag from "../Bag/Bag";
 import Wishlist from "../Wishlist/Wishlist"

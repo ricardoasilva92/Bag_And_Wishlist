@@ -22,3 +22,7 @@
     width: 20%;
     padding-top: 22%;
 }
+
+.quantity {
+    display: flex;
+}

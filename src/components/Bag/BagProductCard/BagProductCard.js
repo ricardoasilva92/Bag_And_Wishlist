@@ -7,13 +7,30 @@ const BagProductCard = props => {
 
     const handleClick = () => {
         setBasket(prevBasket => {
-            const bagProducts = prevBasket.Bag.products;
-            let productToMove = bagProducts.splice(props.index, 1)[0];
+            let productToMove = prevBasket.Bag.products.splice(
+                props.index,
+                1
+            )[0];
             prevBasket.Wishlist.products.push(productToMove);
-            prevBasket.Bag.products = bagProducts;
 
             return { ...prevBasket };
         });
+    };
+
+    const handleIncreaseQtt = () => {
+        setBasket(prevBasket => {
+            prevBasket.Bag.products[props.index].quantity += 1;
+            return { ...prevBasket };
+        });
+    };
+
+    const handleDecreaseQtt = () => {
+        props.product.quantity === 1
+            ? alert("quantitu can't be 0")
+            : setBasket(prevBasket => {
+                  prevBasket.Bag.products[props.index].quantity -= 1;
+                  return { ...prevBasket };
+              });
     };
 
     return (
@@ -30,7 +47,14 @@ const BagProductCard = props => {
                     <li>Brand: {props.product.brand}</li>
                     <li>Name: {props.product.name}</li>
                     <li>Price: {props.product.price}</li>
-                    <li>Quantity: {props.product.quantity}</li>
+                    <li className={Styles.quantity}>
+                        <span>Quantity: </span>
+                        <div className={Styles.quantityButton}>
+                            <button onClick={handleIncreaseQtt}>+</button>
+                            {props.product.quantity}
+                            <button onClick={handleDecreaseQtt}>-</button>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div className={Styles.addToWishlist}>

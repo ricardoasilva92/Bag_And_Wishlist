@@ -7,7 +7,7 @@ const Wishlist = () => {
     const [basket, ] = useContext(BasketContext);
 
     return (
-        <section className={Styles.wishlist}>
+        <div>
             <h1 className={Styles.wishlistTitle}>Wishlist</h1>
             <div className={Styles.wishlistSliderContainer}>
                 <div className={Styles.wishlistSlider}>
@@ -16,7 +16,7 @@ const Wishlist = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

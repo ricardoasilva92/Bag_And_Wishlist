@@ -5,11 +5,23 @@
     border: 1px solid #f5f5f5;
 }
 
-.imageContainer {
-    width:20%;
+.addToWishlistbutton {
+    background-color: #44c767;
+    border: 1px solid #18ab29;
+    border-radius: 28px;
+    color: white;
 }
 
-.image{
+.quantityButton{
+    background-color: white;
+    border: 0px;
+}
+
+.imageContainer {
+    width: 20%;
+}
+
+.image {
     width: 100%;
     height: 100%;
 }

@@ -49,16 +49,16 @@ const BagProductCard = props => {
                     <li>Price: {props.product.price}</li>
                     <li className={Styles.quantity}>
                         <span>Quantity: </span>
-                        <div className={Styles.quantityButton}>
-                            <button onClick={handleIncreaseQtt}>+</button>
+                        <div >
+                            <button className={Styles.quantityButton} onClick={handleIncreaseQtt}>+</button>
                             {props.product.quantity}
-                            <button onClick={handleDecreaseQtt}>-</button>
+                            <button className={Styles.quantityButton} onClick={handleDecreaseQtt}>-</button>
                         </div>
                     </li>
                 </ul>
             </div>
             <div className={Styles.addToWishlist}>
-                <button type="button" onClick={handleClick}>
+                <button type="button" className={Styles.addToWishlistbutton} onClick={handleClick}>
                     Add to Wishlist!
                 </button>
             </div>
